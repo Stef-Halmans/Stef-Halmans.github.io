@@ -1,0 +1,143 @@
+@font-face {
+    font-weight: normal;
+    font-family: 'Suisse BP Intl';
+      font-display: swap;
+      src: url('/webfonts/SuisseIntl-Regular.woff2') format('woff2');
+  }
+  @font-face {
+      font-weight: 300;
+    font-family: 'Suisse BP Intl';
+      font-display: swap;
+      src: url('/webfonts/SuisseIntl-Light.woff2') format('woff2');
+  }
+  @font-face {
+      font-weight: bold;
+    font-family: 'Suisse BP Intl';
+      font-display: swap;
+      src: url('/webfonts/SuisseIntl-Medium.woff2') format('woff2');
+  }
+  @font-face {
+      font-family: 'Set';
+      font-weight: normal;
+      font-display: swap;
+      src: url('/webfonts/Set-Light.woff2') format('woff2');
+  }
+
+  body{
+    overflow-x: hidden;
+    overflow: hidden;
+  }
+
+  
+  
+  a {
+    text-decoration: none;
+    color:#434343
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  a:visited 
+{
+    text-decoration: none;
+    
+}
+
+  /* Style the header with a white background and padding */
+.header {
+  overflow: hidden;
+  background-color: #FFFFFF;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 30px;
+  display:flex; flex-direction: row; justify-content: center; align-items: center;
+}
+
+
+.header-left{
+  font-size: 14px;
+  padding:3px;
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+.header a.logo {
+  font-size: 20px;
+  font-weight: normal;
+  color:#1C1C1C;
+  width:200px;
+  font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.header a.logo:hover{
+  text-decoration: none;
+}
+
+
+.header-right a{
+  background-color:#F2F2F2;
+  border-radius: 38%;
+  padding: 3px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif; 
+  
+}
+
+.header-right a:hover{
+  text-decoration: none;
+}
+
+
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 80px;
+  bottom: 0;
+  z-index: -1;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  position: absolute;
+  font-family:Arial, Helvetica, sans-serif; 
+  font-size: 46px;
+  text-align: center;
+  padding-left: 550px; 
+  padding-right: 400px;
+}
+
+.center p{
+  color: #FFFFFF;
+  letter-spacing: 0.01em;
+  font-style: bold;
+}
+
+.center2 a{
+  color:#FFFFFF;
+  font-style: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 4px;
+  border-radius: 40px;
+  background: rgba(211, 211, 211, 0.3);
+}
+
+
+.center2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 670px;
+  padding-left: 40px;
+}
+
