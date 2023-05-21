@@ -1,0 +1,111 @@
+<!-- This is made with help from the tutorial provided by w3schools: https://www.w3schools.com/howto/howto_js_animate.asp -->
+
+<!DOCTYPE html>
+
+    <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> My animation </title>
+  <link type="text/css" rel="stylesheet" href="stylesheet.css">
+  
+</head>
+<body>
+
+<h1>My JavaScript Colliding Animation</h1>
+
+<p>
+    <button onclick="buttonClick()">Click here to start it</button> 
+    </p>
+
+<div id ="myContainer">
+    <div id ="myAnimation"></div>
+    <div id ="myotherone"></div>
+    <div id="another"></div>
+    <div id="andyetanotherone"></div>
+</div>
+
+<script>
+
+    function buttonClick(){
+        myMoveLeft();
+        myMoveRight();
+        myMoveSalsa();
+        myMoveDance();
+    }
+    function myMoveLeft() {
+      var id = null;
+
+      var elem = document.getElementById("myAnimation");   
+      var pos = 0;
+      clearInterval(id);
+      id = setInterval(frame, 10);
+      function frame() {
+        if (pos == 350) {
+          clearInterval(id);
+        } else {
+          pos++; 
+          elem.style.top = pos + 'px'; 
+          elem.style.left = pos + 'px'; 
+        }
+      }
+    }
+
+    function myMoveRight() {
+      var id = null;
+
+      var elem = document.getElementById("myotherone");   
+      var pos = 0;
+      clearInterval(id);
+      id = setInterval(frame, 10);
+      function frame() {
+        if (pos == 350) {
+          clearInterval(id);
+        } else {
+          pos++; 
+          elem.style.top = pos + 'px'; 
+          elem.style.right = pos + 'px'; 
+        }
+      }
+    }
+
+    
+    function myMoveSalsa() {
+      var id = null;
+
+      var elem = document.getElementById("another");   
+      var pos = 0;
+      clearInterval(id);
+      id = setInterval(frame, 5);
+      function frame() {
+        if (pos == 350) {
+          clearInterval(id);
+        } else {
+          pos++; 
+          elem.style.bottom = pos + 'px'; 
+          elem.style.right = pos + 'px'; 
+        }
+      }
+    }
+
+    
+    function myMoveDance() {
+      var id = null;
+
+      var elem = document.getElementById("andyetanotherone");   
+      var pos = 0;
+      clearInterval(id);
+      id = setInterval(frame, 5);
+      function frame() {
+        if (pos == 350) {
+          clearInterval(id);
+        } else {
+          pos++; 
+          elem.style.bottom = pos + 'px'; 
+          elem.style.left = pos + 'px'; 
+        }
+      }
+    }
+    </script>
+</body>
+
+<html>

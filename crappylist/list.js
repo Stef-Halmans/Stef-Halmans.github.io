@@ -2,7 +2,6 @@ fetch('items.json')
  .then(response => response.json())
  .then(data => initList(data))
 
-
 function inputClicked(){
     input = document.getElementById("todoInput");
     addLi(input.value);
@@ -47,7 +46,10 @@ function addLi(value){
 
     var randomValue = Math.floor(Math.random() * 100000000);
     var li = `
-        <li id="${randomValue}">
+        <li id="${randomValue}" 
+            draggable="true" 
+            onDrag="drag(this)"
+            onDragEnd="drop(this)">
             <button id="delete" onclick="deleteLi('${randomValue}')">
                 Del
             </button>
@@ -62,6 +64,26 @@ function deleteLi(id){
     var li = document.getElementById(id);
     li.parentNode.removeChild(li);
 }
+// inspiration from: https://www.codehim.com/vanilla-javascript/javascript-drag-and-drop-reorder-list/ 
+function drag(item){
+    list = item.parentNode;
+    x = event.clientX;
+    y = event.clientY;
+
+    item.classList.add('drag-sort-active');
+    let swapItem = document.elementFromPoint(x, y) === null 
+        ? item : document.elementFromPoint(x, y);
+  
+    if (list === swapItem.parentNode) {
+      swapItem = swapItem !== item.nextSibling 
+        ? swapItem : swapItem.nextSibling;
+      list.insertBefore(item, swapItem);
+    }
+}
+
+function drop(item) {
+    item.classList.remove('drag-sort-active');
+  }
 
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
@@ -69,3 +91,4 @@ list.addEventListener('click', function(ev) {
     ev.target.classList.toggle('checked');
   }
 }, false);
+

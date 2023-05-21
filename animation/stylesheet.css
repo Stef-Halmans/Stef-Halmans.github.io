@@ -1,0 +1,34 @@
+#myContainer {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: #f0f4ef;
+  }
+  
+  #myAnimation {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: #3a405a;
+  }
+
+  #myotherone {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: #ff8552;
+  }
+
+  #another {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: #f00699;
+  }
+
+  #andyetanotherone {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: #bfcc94;
+  }

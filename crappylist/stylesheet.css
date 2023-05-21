@@ -70,7 +70,11 @@ ul {
 
 ul li {
     cursor: pointer;
-
+    margin: 5px 0;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
 
 }
 
@@ -87,6 +91,10 @@ ul li:hover{
 #todoInput{
     display: inline-block;
 
+}
+
+li.drag-sort-active {
+    background-color: #888;
 }
 
 
