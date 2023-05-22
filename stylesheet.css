@@ -323,7 +323,18 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 8px;
     vertical-align: middle;
     width: 60%;
+    
   }
+
+  .aboveimg h1 {
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
+  .aboveimg p {
+    text-align: justify;
+  }
+
 
   #topbtn {
     display: none; 
