@@ -322,7 +322,7 @@ h1, h2, h3, h4, h5, h6{
   .aboveimg img {
     margin-bottom: 8px;
     vertical-align: middle;
-    width: 150%;
+    width: 70%;
     
   }
 
@@ -399,4 +399,19 @@ h1, h2, h3, h4, h5, h6{
 
   .dev h1, h2, h3 {
     padding: 20px;
+  }
+
+  .devimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* aligns items in the center */
+    padding-left: 300px; /* adds padding on the sides */
+    padding-right: 300px;
+  }
+  
+  .devimg img {
+    margin-bottom: 8px;
+    vertical-align: middle;
+    width: 150%;
+    
   }
