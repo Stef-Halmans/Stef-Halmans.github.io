@@ -320,9 +320,9 @@ h1, h2, h3, h4, h5, h6{
   }
   
   .aboveimg img {
-    margin-top: 8px;
+    margin-bottom: 8px;
     vertical-align: middle;
-    width: 60%;
+    width: 150%;
     
   }
 
@@ -357,5 +357,46 @@ h1, h2, h3, h4, h5, h6{
   }
   
 
+  .dev {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:fit-content;
+    background-color: #F0F4EF;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    
+  }
+
+  .dev image{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* aligns items in the center */
+    padding-left: 300px; /* adds padding on the sides */
+    padding-right: 300px;
+  }
 
 
+  .dev section {
+    padding: 100px 20px;
+    background-color: #f0f4ef;
+    border-radius: 5px;
+    max-width: 70%;
+    scroll-snap-align: start;
+    border-radius: 5px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .dev p{
+    max-width: 75%;
+    padding-left: 250px;
+    text-align:left
+  }
+
+  .dev h1, h2, h3 {
+    padding: 20px;
+  }
