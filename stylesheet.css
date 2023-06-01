@@ -173,7 +173,7 @@ a:hover{
 }
  
 p{
-    text-align: center;
+    text-align: left;
     color:#3A405A
 }
 
@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5, h6{
     justify-content: center; /* aligns items in the center */
     padding-left: 300px; /* adds padding on the sides */
     padding-right: 300px;
-    text-align: justify;
+    text-align: left;
   }
   
   /* first rectangular shape */
@@ -415,3 +415,5 @@ h1, h2, h3, h4, h5, h6{
     width: 150%;
     
   }
+
+ 
